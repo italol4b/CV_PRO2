@@ -1,0 +1,92 @@
+*{
+    border-color: rgba(0, 135, 253, 0.973);
+    padding: 10px;
+    margin: 10px;
+}
+/*fondo_morado*/
+.bg_rojofuego {
+    background-color: rgb(182, 34, 34);
+}
+
+.bg_celesteintenso {
+    background-color: rgba(227, 251, 255, 0.658);
+}
+
+.bg_Gris {
+    background-color: rgb(240, 230, 230);
+}
+
+.bg_Celeste {
+    background-color: rgb(255, 255, 255);
+}
+
+.block {
+    /*Acepta altura*/
+    display: block
+}
+
+.inline {
+    /*No acepta tamaño*/
+
+    display: inline;
+}
+
+.inline-block {
+    /*Acepta tamaño*/
+    display: inline-block;
+;
+}
+
+aside {
+    width: 20%;
+    height: 50vw;
+}
+
+#content {
+    width: 65%;
+}
+
+.flex_1 {
+    /*tamaño de un elemento*/
+    flex-grow: 1;
+}
+
+.flex_2 {
+    /*tamaño de un elemento*/
+    flex-grow: 2;
+}
+
+.flex {
+    /*Quitamos el tamaño, eso hace que se adapten a los hijos */
+    /*Configuraciones del display flex*/
+    display: flex;
+    /*Direccion*/
+    flex-direction: row;
+    /* para que no se amontonen */
+    flex-wrap:wrap;
+    /* para que se alineen dengro del eje secundario*/
+    align-content: space-around;
+    /* para que se alineen dengro del eje principal*/
+    justify-content: space-around;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    /*grid-template-columns: 25px 50% 1fr;*/
+    /*grid-template-row: repeat(5, 20%);*/
+    grid-template-rows: 25% 25% 30% 20%;
+    /*gap: 30px 100px*/
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.grid_item_1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+h2{
+    color:blueviolet;
+}
